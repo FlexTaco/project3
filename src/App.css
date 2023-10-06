@@ -1,0 +1,150 @@
+h1 {
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 0;
+  margin: 0;
+  font-size: 50px;
+}
+h2 {
+  color: black;
+  text-align: center;
+  padding: 80px;
+  padding-top: 0;
+  font-size: 18px;
+}
+.button-container {
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  position: sticky;
+  display: block;
+}
+.button-container,
+button {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.submit-container,
+button {
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 0;
+}
+.submit-container {
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  position: sticky;
+  display: grid;
+  justify-content: center;
+}
+.submit-container,
+form {
+  padding-top: 20px;
+}
+.submit-container,
+label {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+/*||||||||||||||||||||||||*/
+/*normal*/
+.flip-card-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 2px #0000004d;
+  transform-style: preserve-3d;
+  font-weight: 700;
+  height: 250px;
+  cursor: pointer;
+  transition: 0.15s;
+  transform: perspective(1000px) rotateX(var(--rotate-X, 1));
+}
+.flip-card-inner:hover {
+  box-shadow: 0 0 5px 2px #ff0101;
+}
+
+/*flipped*/
+.flip-card-inner-flipped {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 2px #0000004d;
+  transform-style: preserve-3d;
+  font-weight: 700;
+  height: 250px;
+  cursor: pointer;
+  transition: 0.15s;
+  transform: perspective(1000px) rotateX(var(--rotate-X, 0));
+  --rotate-X: 180deg;
+}
+.flip-card-inner-flipped:hover {
+  box-shadow: 0 0 5px 2px #ff0101;
+}
+
+/*front*/
+.flip-card-inner.flipcard {
+  position: absolute;
+  padding: 5px;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+/*back*/
+.flip-card-inner-flipped.backcard {
+  position: absolute;
+  padding: 5px;
+  justify-content: center;
+  backface-visibility: hidden;
+}
+
+.flipcard:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flipcard {
+  background-color: transparent;
+  color: black;
+}
+
+.backcard {
+  font-size: medium;
+  color: black;
+  transform: rotateX(180deg);
+}
+.flip-card-inner-flipped {
+  --rotate-X: 180deg;
+}
+
+/*input */
+.inputRight:hover {
+  color: green;
+}
+.inputWrong:hover {
+  color: red;
+}
+
+/*
+.flipcard {
+  color: black;
+  background-color: aqua;
+  width: auto;
+  word-wrap: break-word;
+  padding: 10%;
+  margin: 30px;
+  opacity: 0.6;
+  text-align: center;
+}
+.backcard {
+  background-color: transparent;
+  backface-visibility: hidden;
+}
+*/
