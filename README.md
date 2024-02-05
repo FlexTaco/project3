@@ -1,6 +1,4 @@
-# Web Development Project 3 - regex
-
-Submitted by: Joffre Villacis
+Project 3 - regex
 
 This web app: project3
 
@@ -18,11 +16,9 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [x] A shuffle button is used to randomize the order of the cards
-- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
 - [x] A counter displays the user's current and longest streak of correct responses
-- [] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
-The following **additional** features are implemented:
+
 
 ## Video Walkthrough
 
@@ -38,10 +34,6 @@ Here's a walkthrough of implemented user stories:
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/5d512d534fca4b7095be99936affc042-with-play.gif">
     </a>
   </div>
-
-## Notes
-
-it was pretty easy, since I didn't need to create a whole new project. Adding on the other pieces wasn't too bad. I had some trouble was the form and getting the response, but it was just a wrong varible name.
 
 ## License
 
